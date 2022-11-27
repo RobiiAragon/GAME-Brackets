@@ -43,8 +43,8 @@
       
     <style>
         .sudo {
-            width: 225px;
-            height: 225px;
+            width: 256px;
+            height: 256px;
             margin: 50px;
             background-image: url(
 "https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_smash.png");
