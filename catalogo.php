@@ -36,9 +36,39 @@
 </head>
 
 
+<head>
+    <title>
+        
+    </title>
+      
+    <style>
+        .sudo {
+            width: 225px;
+            height: 225px;
+            margin: 50px;
+            background-image: url(
+"https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/smash.png");
+        }
+  
+        .sudo:hover {
+            background-image: url(
+"https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+        }
+    </style>
+</head>
+  
+<body>
+    <h2>Smash bros</h2>
+  
+
+  
+    <div class="sudo"></div>
+</body>
+
 
 
 <body>
+<h2>Sponsors</h2>
 <?php require "./partials/header.php" ?>
 </body>
 <?php require "partials/footer.php" ?>
