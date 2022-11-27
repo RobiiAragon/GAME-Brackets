@@ -1,0 +1,48 @@
+
+/******************************Smash************************************/
+  .sudo4 {
+    width: 256px;
+    height: 256px;
+    margin: 50px;
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_smash.png");
+  }
+
+  .sudo4:hover {
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/smash.png");
+  }
+
+  
+/******************************Overwatch************************************/
+  .sudo3 {
+    width: 256px;
+    height: 256px;
+    margin: 50px;
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_overwatch.png");
+  }
+
+  .sudo3:hover {
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/overwatch.png");
+  }
+  /******************************LOL************************************/
+  
+  .sudo2 {
+    width: 256px;
+    height: 256px;
+    margin: 50px;
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_lol.png");
+  }
+
+  .sudo2:hover {
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/lol.png");
+  }
+  /******************************CSGO************************************/
+  .sudo1 {
+    width: 256px;
+    height: 256px;
+    margin: 50px;
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_csgo.png");
+  }
+
+  .sudo1:hover {
+    background-image: url("https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/csgo.png");
+  }
