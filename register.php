@@ -53,9 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-<body>
-<?php require "./partials/header.php" ?>
-</body>
+
 <div class="container pt-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
@@ -128,5 +126,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </div>
 </div>
-
+<body>
+<?php require "./partials/header.php" ?>
+</body>
 <?php require "partials/footer.php" ?>

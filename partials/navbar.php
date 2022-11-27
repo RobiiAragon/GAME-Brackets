@@ -2,12 +2,13 @@
 <link rel="stylesheet" href="navbar.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand font-weight-bold" href="../index.php">
-      <img class="mr-2" src="../static/img/logo.png" />
+    <a class="navbar-brand font-weight-bold" href="./index.php">
+
 
 
     
       <ul class="menu">
+      <img class="mr-2" src="./static/img/logo.png" />
         <li class="nav-item">
           <a class="nav-link" href="../FINAL/catalogo.php">Juegos</a>
         </li>

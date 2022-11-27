@@ -1,6 +1,6 @@
 create database proyecto;
 
-drop database proyecto; /*esto solo borra la base de datos no tocar*/
+/*drop database proyecto; esto solo borra la base de datos no tocar*/
 
 create table plataforma(
 codigo int(4) primary key auto_increment,
@@ -17,8 +17,8 @@ values
 (null,'Xbox Live');
 
 
-drop table plataforma /*esto borra la tabla de plataforma*/
-drop table generos /*esto borra la tabla de generos*/
+/*drop table plataforma esto borra la tabla de plataforma*/
+/*drop table generos esto borra la tabla de generos*/
 
 create table generos(
 codigo int(4) primary key auto_increment,
