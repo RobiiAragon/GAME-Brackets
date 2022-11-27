@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 
+.logo {
+    width: 200;
+    top: 200;
+    height: 200;
+}
+.welcome {
+    background: url('/contacts-app/static/img/background.jpg');
+    background-position: center center;
+    background-size: cover;
+}
 html {
     box-sizing: border-box;
 }
@@ -25,7 +35,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 720px;
+    max-width: 200px;
     margin: 0 auto;
     height: 100vh;
     list-style: none;
