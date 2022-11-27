@@ -47,12 +47,12 @@
             height: 225px;
             margin: 50px;
             background-image: url(
-"https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/smash.png");
+"https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/Gray_smash.png");
         }
   
         .sudo:hover {
             background-image: url(
-"https://media.geeksforgeeks.org/wp-content/uploads/rk.png");
+"https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/smash.png");
         }
     </style>
 </head>
