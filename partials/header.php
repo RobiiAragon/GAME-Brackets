@@ -33,6 +33,30 @@
     	<div class="slide">
 			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/blizzard.png" height="100" width="240" alt="" />
 		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/utt.png" height="100" width="240" alt=""/>
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/Intel.png" height="100" width="240" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/google.png" height="100" width="240" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/nvidia.png" height="100" width="240" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/twitch.png" height="100" width="240" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/nintendo.png" height="100" width="240" alt="" />
+		</div>
+		<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/Valve.png" height="100" width="240" alt="" />
+		</div>
+    	<div class="slide">
+			<img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/sponsors/blizzard.png" height="100" width="240" alt="" />
+		</div>
 	</div>
 </div>
 <!-- partial -->

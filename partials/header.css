@@ -5,7 +5,7 @@ body {
     justify-content: center;
   }
    
-  .navbar img {
+  .slider img {
     width: 8rem;
 }
 
@@ -35,7 +35,7 @@ body {
   .slider {
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 100px;
-    margin: auto;
+    margin: 30px;
     overflow: hidden;
     position: relative;
     width: 960px;
@@ -54,10 +54,12 @@ body {
     transform: rotateZ(180deg);
   }
   .slider::before {
+
     left: 0;
     top: 0;
   }
   .slider .slide-track {
+
     -webkit-animation: scroll 40s linear infinite;
             animation: scroll 40s linear infinite;
     display: flex;
@@ -66,4 +68,5 @@ body {
   .slider .slide {
     height: 100px;
     width: 250px;
+
   }

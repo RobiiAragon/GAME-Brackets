@@ -11,9 +11,9 @@
 
 <body>
   <nav>
-    <a class="navbar-brand font-weight-bold" href="./index.php">
+    <a class="navbar-brand font-weight-bold" href="../../index.php">
       <ul class="menu">
-        <img class="mr-2" src="./static/img/logo.png" />
+        <img class="mr-2" src="../../static/img/logo.png" />
     </a>
     <li class="nav-item">
       <a class="nav-link" href="../FINAL/catalogo.php">Juegos</a>

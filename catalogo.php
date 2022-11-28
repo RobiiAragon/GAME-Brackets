@@ -39,26 +39,31 @@
   <!----------------------------------------------Smash----------------------------------------------------->
 
   <head>
-    <div class="sudo4"></div>
+
+  <div class="sudo4" ><a href="./partials/aboutgames/smash.php"></a> </div>
   </head>
+
+
 
   <!----------------------------------------------Overwatch----------------------------------------------------->
 
   <head>
-  <div class="sudo3"></div>
+
+  <div class="sudo3" ><a href="./partials/aboutgames/smash.php"></a> </div>
   </head>
+
 
   <!----------------------------------------------LOL----------------------------------------------------->
   <head>
 
 
-  <div class="sudo2"></div>
+  <div class="sudo2" ><a href="./partials/aboutgames/smash.php"></a> </div>
   </head>
 
 
   <!----------------------------------------------CSGO----------------------------------------------------->
   <head>
-    <div class="sudo1"></div>
+    <div class="sudo1" ><a href="./partials/aboutgames/smash.php"></a> </div>
   </head>
 
 
