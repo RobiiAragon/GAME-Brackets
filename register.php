@@ -1,3 +1,4 @@
+    <!--Doctype-->
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -6,7 +7,7 @@
 <link rel="stylesheet" href="./partials/header.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    
+    <!--Estilos y scripts-->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css"
@@ -21,13 +22,13 @@
     crossorigin="anonymous"
   ></script>
 
-
+    <!--require con el navbar o menu-->
 <header>
 <nav>
 <?php require "./partials/navbar.php" ?>
 </nav>
 </head>
-
+    <!--aca va la conexion con base de datos esta es resiclada no sirve :(-->
 <?php
 require "database.php";
 $error = null;
@@ -66,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 
-
+    <!--aca va el formulario-->
 <div class="container pt-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
@@ -123,6 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </div>
   </div>
 </div>
+    <!--aca el header y pie de pagina-->
 <body>
 <?php require "./partials/header.php" ?>
 </body>
