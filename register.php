@@ -6,8 +6,21 @@
 <link rel="stylesheet" href="./partials/header.css">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand font-weight-bold" href="index.php">
-      <img class="mr-2" src="./static/img/logo.png" />
+    
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css"
+    integrity="sha512-ZdxIsDOtKj2Xmr/av3D/uo1g15yxNFjkhrcfLooZV5fW0TT7aF7Z3wY1LOA16h0VgFLwteg14lWqlYUQK3to/w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script
+    defer
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+
 
 <header>
 <nav>
@@ -68,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <br>
           <form method="POST" action="register.php">
             <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Usuario</label>
+              <label for="name" class="col-md-4 col-form-label text-md-end">Nickname</label>
 
               <div class="col-md-6">
                 <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
@@ -84,26 +97,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <form method="POST" action="register.php">
             <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Apellido Paterno</label>
+              <label for="name" class="col-md-4 col-form-label text-md-end">Apellidos</label>
 
               <div class="col-md-6">
                 <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
-              </div>
-            </div>
-            <form method="POST" action="register.php">
-            <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Apellido Materno</label>
-
-              <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="email" class="col-md-4 col-form-label text-md-end">Email</label>
-
-              <div class="col-md-6">
-                <input id="email" type="email" class="form-control" name="email" autocomplete="email" autofocus>
               </div>
             </div>
 
