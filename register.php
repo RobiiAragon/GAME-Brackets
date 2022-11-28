@@ -29,43 +29,6 @@
 </nav>
 </head>
     <!--aca va la conexion con base de datos esta es resiclada no sirve :(-->
-<?php
-require "database.php";
-$error = null;
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"]) || empty($_POST["email"]) || empty($_POST["password"])) {
-    $error = "Por favor rellena todos los campos.";
-  } else if (!str_contains($_POST["email"], "@")) {
-    $error = "El formato del correo es incorrecto.";
-  } else {
-    $statement = $conn->prepare("SELECT * FROM users WHERE email = :email");
-    $statement->bindParam(":email", $_POST["email"]);
-    $statement->execute();
-
-    if ($statement->rowCount() > 0) {
-      $error = "Este correo ya esta en uso.";
-    } else {
-      $conn
-        ->prepare("INSERT INTO users (name, email, password) VALUES (:name, :email, :password)")
-        ->execute([
-          ":name" => $_POST["name"],
-          ":email" => $_POST["email"],
-          ":password" => password_hash($_POST["password"], PASSWORD_BCRYPT),
-        ]);
-
-      $statement = $conn->prepare("SELECT * FROM users WHERE email = :email LIMIT 1");
-      $statement->bindParam(":email", $_POST["email"]);
-      $statement->execute();
-      $user = $statement->fetch(PDO::FETCH_ASSOC);
-
-      session_start();
-      $_SESSION["user"] = $user;
-
-      header("Location: home.php");
-    }
-  }
-}
-?>
 
     <!--aca va el formulario-->
 <div class="container pt-5">
