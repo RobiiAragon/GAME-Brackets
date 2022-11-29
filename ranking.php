@@ -40,11 +40,11 @@
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Liga de videojuegos profesional online</h2>
-        <p class="myP">This is a responsive fixed navbar animated on scroll</p>
-        <p class="myP">I took inspiration from ABDO STEIF </p>
-        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+        <h2 class="myH2">Tabla de clasificaciones</h2>
+        <p class="myP">Top 10 mundial Smash Bros</p>
         <p class="myP">UTT</p>
+        <p class="myP"></p>
+        <p class="myP"></p>
 
         <p class="myP">
 
