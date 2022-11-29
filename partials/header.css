@@ -1,20 +1,3 @@
-body {
-    align-items: center;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-  }
-   
-  .slider img {
-    width: 8rem;
-}
-
-  .welcome {
-    background: url('/static/img/Backgrounds/background.png');
-    background-position: center center;
-    background-size: cover;
-}
-  
   @-webkit-keyframes scroll {
     0% {
       transform: translateX(0);

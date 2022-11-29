@@ -13,7 +13,7 @@
 
       <?php
 
-      require "database.php";
+      require "conexionDB.php";
 
       $error = null;
 

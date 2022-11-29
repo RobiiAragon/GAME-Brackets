@@ -1,94 +1,115 @@
     <!--Doctype-->
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="UTF-8">
-<title>LVPO</title>
-<link rel="stylesheet" href="./partials/navbar.css">
-<link rel="stylesheet" href="./partials/header.css">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container-fluid">
-    <!--Estilos y scripts-->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.3/darkly/bootstrap.min.css"
-    integrity="sha512-ZdxIsDOtKj2Xmr/av3D/uo1g15yxNFjkhrcfLooZV5fW0TT7aF7Z3wY1LOA16h0VgFLwteg14lWqlYUQK3to/w=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <script
-    defer
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="UTF-8">
+    <title>LVPO</title>
+    <link rel="stylesheet" href="./partials/header.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/css/bootsrap.css" />
 
-    <!--require con el navbar o menu-->
-<header>
-<nav>
-<?php require "./partials/navbar.php" ?>
-</nav>
-</head>
-    <!--aca va la conexion con base de datos esta es resiclada no sirve :(-->
 
-    <!--aca va el formulario-->
-<div class="container pt-5">
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-header">Registrarse</div>
-        <div class="card-body">
-          <?php if ($error) : ?>
-            <p class="text-danger">
-              <?= $error ?>
-            </p>
-          <?php endif ?>
-          <br>
-          <form method="POST" action="register.php">
-            <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Nickname</label>
+    <body>
+      <!-- partial:index.partial.html -->
+      <nav class="nav">
+        <div class="container">
+          <div class="logo">
+            <a href="./index.php">
+              <img class="mr-2" src="./static/img/logo.png" />
+          </div>
+          </a>
 
-              <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
-              </div>
-            </div>
-          <form method="POST" action="register.php">
-            <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Nombre</label>
-
-              <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
-              </div>
-            </div>
-            <form method="POST" action="register.php">
-            <div class="mb-3 row">
-              <label for="name" class="col-md-4 col-form-label text-md-end">Apellidos</label>
-
-              <div class="col-md-6">
-                <input id="name" type="text" class="form-control" name="name" autocomplete="name" autofocus>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <label for="password" class="col-md-4 col-form-label text-md-end">Password</label>
-
-              <div class="col-md-6">
-                <input id="password" type="password" class="form-control" name="password" autocomplete="password" autofocus>
-              </div>
-            </div>
-
-            <div class="mb-3 row">
-              <div class="col-md-6 offset-md-4">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </form>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-    <!--aca el header y pie de pagina-->
-<body>
-<?php require "./partials/header.php" ?>
-</body>
-<?php require "partials/footer.php" ?>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="../FINAL/catalogo.php">Juegos</a></li>
+            <li><a href="../FINAL/ranking.php">leaderboard</a></li>
+            <li><a href="../FINAL/register.php">Registrate</a></li>
+            <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <section class="home">
+      </section>
+      <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">Registrarse</h2>
+        <!--aca va el formulario-->
+        <div class="container pt-5">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header">Registrarse</div>
+                <div class="card-body">
+                  <main>
+                    <section class="principal">
+                    </section>
+                    <section class="secundario">
+                      <form action="addjugador.php" method="POST" enctype="multipart/form-data">
+
+                        <input type="text" name="first" required pattern="[A-Za-z ]*" maxlength="40" placeholder="Nombres" class="entradas">
+                        <br>
+
+                        <input type="text" name="txtLastName" required pattern="[A-Za-z áéíóúÁÉÍÓÚñÑ. ]*" maxlength="40" placeholder="Apellidos" class="entradas">
+                        <br>
+
+                        <input type="text" name="txtAlias" maxlength="40" required placeholder="Nickname(Apodo)" class="entradas">
+                        <br>
+
+                        <input type="password" name="txtpassword" maxlength="15" placeholder="password" class="entradas">
+                        <br>
+
+                        <input type="text" name="txtnacionalidad" pattern="[0-9]*" maxlength="1" placeholder="Nacionalidad(solo numeros)" class="entradas">
+                        <br>
+
+
+                        <input type="reset" value="cancel" class="button1">
+                        <input type="submit" value="update" class="button2">
+                      </form>
+                      <?php
+                      include_once("jugador.php");
+                      ?>
+
+
+
+                    </section>
+                  </main>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <!-- Jquery needed -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="./partials/js/scripts.js"></script>
+
+        <!-- Function used to shrink nav bar removing paddings and adding black background -->
+        <script>
+          $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+            } else {
+              $('.nav').removeClass('affix');
+            }
+          });
+        </script>
+
+        <!--aca va la conexion con base de datos-->
+        <!--aca va la conexion con base de datos esta es resiclada no sirve :(-->
+
+
+
+        <!--aca el header y pie de pagina-->
+
+        <body>
+          <?php require "./partials/header.php" ?>
+        </body>
+        <?php require "partials/footer.php" ?>

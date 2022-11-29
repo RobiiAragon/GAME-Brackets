@@ -1,6 +1,6 @@
 create database proyecto;
 
-/*drop database proyecto; esto solo borra la base de datos no tocar*/
+drop database proyecto; /*esto solo borra la base de datos no tocar*/
 
 create table plataforma(
 codigo int(4) primary key auto_increment,
@@ -17,8 +17,8 @@ values
 (null,'Xbox Live');
 
 
-/*drop table plataforma esto borra la tabla de plataforma*/
-/*drop table generos esto borra la tabla de generos*/
+drop table plataforma /*esto borra la tabla de plataforma*/
+drop table generos /*esto borra la tabla de generos*/
 
 create table generos(
 codigo int(4) primary key auto_increment,
@@ -42,6 +42,14 @@ generos int(4) not null,
 foreign key(generos) references generos(codigo)
 );
 
+insert into juegos(codigo,nombre,generos)
+values
+(null,'Smash Bros',3),
+(null,'Overwatch',2),
+(null,'League of Legend',1),
+(null,'Counter Strike',2);
+
+
 create table juego_plataforma(
 juegos int(5) not null,
 plataforma int(4) not null,
@@ -50,15 +58,23 @@ foreign key(plataforma) references plataforma(codigo),
 primary key(juegos,plataforma)
 );
 
-/*inserts de la tabla de juegos*/
-insert into juegos(codigo,nombre,plataforma,generos)
-values ('null','Smash Bros',1,3)
-/**/
-
 create table nacionalidad(
 codigo int(4) primary key auto_increment,
 nacionalidad varchar(20) not null
 );
+
+insert into nacionalidad(codigo,nacionalidad)
+values
+(null,'Brasil'),
+(null,'Canada'),
+(null,'China'),
+(null,'India'),
+(null,'Japon'),
+(null,'Rusia'),
+(null,'Korea del Sur'),
+(null,'Reino Unido'),
+(null,'Estados Unidos')
+
 
 
 create table jugadores(
@@ -70,6 +86,9 @@ nacionalidad int(4) not null,
 foreign key(nacionalidad) references nacionalidad(codigo)
 );
 
+
+
+
 create table juego_jugadores(
 juegos int(5) not null,
 jugadores int(5) not null,
@@ -77,6 +96,9 @@ foreign key(juegos) references juegos(codigo),
 foreign key(jugadores) references jugadores(codigo),
 primary key(juegos,jugadores)
 );
+
+ALTER TABLE jugadores 
+ADD password VARCHAR(8) not null;
 
 
 create table tipo_evento(
@@ -138,6 +160,44 @@ foreign key(emparejamiento) references emparejamiento(codigo),
 foreign key(clasificacion) references clasificacion(codigo),
 primary key(emparejamiento,clasificacion)
 );
+
+/* triggers  */
+
+
+delimiter$$
+ create trigger  notdelete
+ before delete on juegos
+ for each row 
+ begin
+   declare msg varchar(255);
+     set msg =concat('no pudes eliminar los juegos');
+     signal sqlstate '45000' set  message_text=msg;
+ end$$
+delimiter;
+
+DELETE  FROM juegos where codigo = 1
+
+
+
+
+delimiter$$
+ create trigger  notdeletenationality
+ before delete on nacionalidad
+ for each row 
+ begin
+   declare msg varchar(255);
+     set msg =concat('no pudes eliminar la nacionalidad');
+     signal sqlstate '45000' set  message_text=msg;
+ end$$
+delimiter;
+
+
+/*entrega final de proyecto
+
+1.Portada
+
+*/
+
 
 
 

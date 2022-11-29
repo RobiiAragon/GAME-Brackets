@@ -1,76 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>LVPO</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./partials/navbar.css">
-<link rel="stylesheet" href="./partials/header.css">
-<link rel="stylesheet" href="./static/css/catalogo.css">
 
-<header>
-  <nav>
+<head>
+    <meta charset="UTF-8">
+    <title>LVPO</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand font-weight-bold" href="./index.php">
+<body>
+    <!-- partial:index.partial.html -->
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.php">
+                    <img class="mr-2" src="./static/img/logo.png" />
+            </div>
+            </a>
 
-
-
-
-          <ul class="menu">
-            <img class="mr-2" src="./static/img/logo.png" />
-            <li class="nav-item">
-              <a class="nav-link" href="../FINAL/catalogo.php">Juegos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../FINAL/ranking.php">leaderboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../FINAL/register.php">Registrate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../FINAL/login.php">Iniciar Sesion</a>
-            </li>
-          </ul>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="../FINAL/ranking.php">leaderboard</a></li>
+                <li><a href="../FINAL/register.php">Registrate</a></li>
+                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+            </ul>
+        </div>
+        <span class="navTrigger">
+            <i></i>
+            <i></i>
+            <i></i>
+        </span>
+        </div>
     </nav>
-  </nav>
-  </head>
-
-  <!----------------------------------------------Smash----------------------------------------------------->
-
-  <head>
-
-  <div class="sudo4" ><a href="./partials/aboutgames/smash.php"></a> </div>
-  </head>
+    </div>
 
 
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">Catalogo</h2>
+        <p class="myP">This is a responsive fixed navbar animated on scroll</p>
+        <p class="myP">I took inspiration from ABDO STEIF </p>
+        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
+        <p class="myP">Albi</p>
 
-  <!----------------------------------------------Overwatch----------------------------------------------------->
+        <p class="myP">
 
-  <head>
-
-  <div class="sudo3" ><a href="./partials/aboutgames/smash.php"></a> </div>
-  </head>
-
-
-  <!----------------------------------------------LOL----------------------------------------------------->
-  <head>
-
-
-  <div class="sudo2" ><a href="./partials/aboutgames/smash.php"></a> </div>
-  </head>
-
-
-  <!----------------------------------------------CSGO----------------------------------------------------->
-  <head>
-    <div class="sudo1" ><a href="./partials/aboutgames/smash.php"></a> </div>
-  </head>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
+        </p>
+    </div>
 
 
 
+    <!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="./partials/js/scripts.js"></script>
 
-  <body>
-    <h2>Sponsors</h2>
-    <?php require "./partials/header.php" ?>
-  </body>
-  <?php require "partials/footer.php" ?>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+
+
+    <?php require "./partials/footer.php" ?>
