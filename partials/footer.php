@@ -4,6 +4,11 @@
         <img class="mr-2" src="./static/img/sponsors/twitch.png" />
         <div class="twitch"></div>
     </a>
+    <h4 class="footer-headings color-red">Unete a nuestro canal de discord</h4>
+    <a href="https://discord.gg/WccWYFyJgn">
+        <img class="mr-2" src="./static/img/sponsors/discord.png" />
+        <div class="twitch"></div>
+    </a>
     <div class="Copyright"> Copyright® 2022, Liga Profesional de Videojuegos Online Universidad Tecnologica de Tijuana, Docencia 1, 3roC, Equipo 7</div>
 </footer>
 </main>
