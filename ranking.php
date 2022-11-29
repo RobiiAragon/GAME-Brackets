@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>LVPO</title>
+    <!-- Conexiones -->
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <!-- NAVbar LOGO -->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -16,7 +17,7 @@
                     <img class="mr-2" src="./static/img/logo.png" />
             </div>
             </a>
-
+            <!-- NAVbar menu -->
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
@@ -34,8 +35,8 @@
         </div>
     </nav>
     </div>
-
-
+    <!--END NAVbar menu -->
+    <!--Home (informacion y main page)-->
     <section class="home">
     </section>
     <div style="height: 1000px">
@@ -58,11 +59,11 @@
 
 
 
-    <!-- Jquery needed -->
+    <!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./partials/js/scripts.js"></script>
 
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
@@ -74,5 +75,5 @@
         });
     </script>
 
-
+    <!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
     <?php require "./partials/footer.php" ?>

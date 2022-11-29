@@ -22,8 +22,11 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/Brackets.php">Brackets</a></li>
+                <li><a href="../FINAL/Perfiljugador.php">Perfil</a></li>
+                <li><a href="../FINAL/login.php">Cerrar Sesion</a></li>
+
+
             </ul>
         </div>
         <span class="navTrigger">
@@ -40,7 +43,7 @@
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">What is this ?</h2>
+        <h2 class="myH2">Inicio</h2>
         <p class="myP">This is a responsive fixed navbar animated on scroll</p>
         <p class="myP">I took inspiration from ABDO STEIF </p>
         <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
