@@ -141,7 +141,12 @@ body {
     }
 }
 
-
+.catalogo{
+    width: center;
+    height: center;
+    margin-top: auto;
+    margin: center;
+}
 /* Animacion */
 
 

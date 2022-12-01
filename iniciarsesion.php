@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>LVPO</title>
+    <!-- Conexiones -->
     <link rel="stylesheet" href="./static/css/style.css">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="./static/css/bootsrap.css" />
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <!-- NAVbar LOGO -->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -16,7 +19,7 @@
                     <img class="mr-2" src="./static/img/logo.png" />
             </div>
             </a>
-
+            <!-- NAVbar menu -->
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
@@ -34,25 +37,32 @@
         </div>
     </nav>
     </div>
-
-
+    <!--END NAVbar menu -->
+    <!--Home (informacion y main page)-->
     <section class="home">
     </section>
     <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Liga de videojuegos profesional online</h2>
-        <p class="myP">UTT</p>
+
+        <h2 class="myH2">Iniciar sesion</h2>
+        <section class="secundario">
+             <form action="validar.php" method="POST" enctype="multipart/form-data">      
+               <input type="text" name="Alias" maxlength="40" required placeholder="Nickname" class="entradas">
+                        
+               <input type="password" name="password" minlength="5" maxlength="50" placeholder="password" class="entradas">
 
 
-    </div>
+               <input type="reset" value="cancel" class="button1">
+               <input type="submit" value="Iniciar sesion" class="button2">
+             </form>
+          </section>
+    </main>
+    <br>
 
-
-
-    <!-- Jquery needed -->
+    <!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./partials/js/scripts.js"></script>
 
-    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
@@ -64,5 +74,5 @@
         });
     </script>
 
-
+    <!-- Pie de pagia -->
     <?php require "./partials/footer.php" ?>

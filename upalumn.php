@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +23,11 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/Brackets.php">Brackets</a></li>
+
+                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
+
+
             </ul>
         </div>
         <span class="navTrigger">
@@ -40,8 +44,24 @@
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Liga de videojuegos profesional online</h2>
-        <p class="myP">UTT</p>
+        <h2 class="myH2">Inicio</h2>
+        <?php
+ /*echo $_POST['first'];
+ echo $_POST['txtLastName'];
+ echo $_POST['inputEdad'];
+ echo $_POST['inputEmail'];*/
+ echo $_POST['textid'];
+
+ include_once("alumnoupdate.php");
+ $myJugador=new JugadoresUPD();
+
+ $newid=$myJugador->updJugador($_POST['textid'],$_POST['first'],$_POST['txtLastName'],$_POST['inputAlias'],password_hash($_POST['textpassw'], PASSWORD_DEFAULT),$_POST['inputnad']);
+//  echo $newid;
+
+
+?>
+
+
 
 
     </div>

@@ -62,7 +62,7 @@
                         <input type="password" name="txtpassword" maxlength="15" placeholder="password" class="entradas">
                         <br>
 
-                        <input type="text" name="txtnacionalidad" pattern="[0-9]*" maxlength="1" placeholder="Nacionalidad(solo numeros)" class="entradas">
+                        <input type="text" name="txtnacionalidad" pattern="[0-9]*" maxlength="2" placeholder="Nacionalidad(solo numeros)" class="entradas">
                         <br>
 
 

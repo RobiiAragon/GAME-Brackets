@@ -22,8 +22,11 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/Brackets.php">Brackets</a></li>
+
+                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
+
+
             </ul>
         </div>
         <span class="navTrigger">
@@ -40,8 +43,23 @@
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Liga de videojuegos profesional online</h2>
-        <p class="myP">UTT</p>
+        <h2 class="myH2">baneado </h2>
+        <?php
+ /*echo $_POST['first'];
+ echo $_POST['txtLastName'];
+ echo $_POST['txtAlias'];
+ echo $_POST['txtpassword'];
+ echo $_POST['txtnacionalidad'];*/
+
+ include_once("insertudelete.php");
+ $myJugador=new JugadoresDEL();
+ $newid=$myJugador->DelJugador($_POST['txtid']);
+ echo "<br>"; 
+echo " Has eliminado un Jugador del Torneo por incumplir las normas". $newid;
+ //echo $newid;
+
+ /*header('Location: ./registro.php');*/
+?>
 
 
     </div>
@@ -66,3 +84,6 @@
 
 
     <?php require "./partials/footer.php" ?>
+
+
+

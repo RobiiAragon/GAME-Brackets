@@ -22,7 +22,7 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
                 <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
             </ul>
         </div>
         <span class="navTrigger">
@@ -40,19 +40,11 @@
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
         <h2 class="myH2">Catalogo</h2>
-        <p class="myP">This is a responsive fixed navbar animated on scroll</p>
-        <p class="myP">I took inspiration from ABDO STEIF </p>
-        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-        <p class="myP">Albi</p>
-
-        <p class="myP">
-
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-        </p>
+        <div class="catalogo">
+        <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/smash.png">
+        <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/overwatch.png">
+        <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/lol.png">
+        <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/csgo.png">
     </div>
 
 

@@ -23,8 +23,8 @@
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
                 <li><a href="../FINAL/Brackets.php">Brackets</a></li>
-                <li><a href="../FINAL/Perfiljugador.php">Perfil</a></li>
-                <li><a href="../FINAL/login.php">Cerrar Sesion</a></li>
+
+                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
 
 
             </ul>
@@ -44,19 +44,11 @@
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
         <h2 class="myH2">Inicio</h2>
-        <p class="myP">This is a responsive fixed navbar animated on scroll</p>
-        <p class="myP">I took inspiration from ABDO STEIF </p>
-        <p class="myP">I HOPE YOU FIND THIS USEFULL</p>
-        <p class="myP">Albi</p>
+        <p class="myP">El servicio de torneos de videojuegos es una página en donde los jugadores podrán inscribirse a torneos de tipo clasificación, en donde los participantes se puedan dar de alta, competir con otros jugadores y ganar premios, conforme avancen las rondas se hará el conteo de cuantas victorias y puntaje que tiene cada jugador, cuáles son sus estadísticas facilitando la previsualización de su desempeño como jugador. </p>
 
-        <p class="myP">
 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam
-        </p>
+
+
     </div>
 
 

@@ -263,3 +263,8 @@ values ('Luka','Perkovic','Perkz',2),
 ('Park','Jun-young','Profit',7),
 ('Dante','MCfly','DOC',9),
 ('Lee','Sang-hyeok','faker',1);
+
+
+alter table emparejamiento add COLUMN Alias varchar(20) not null;
+
+
