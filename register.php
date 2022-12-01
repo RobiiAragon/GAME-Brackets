@@ -25,7 +25,7 @@
             <li><a href="../FINAL/catalogo.php">Juegos</a></li>
             <li><a href="../FINAL/ranking.php">leaderboard</a></li>
             <li><a href="../FINAL/register.php">Registrate</a></li>
-            <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+            <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
           </ul>
         </div>
       </nav>
@@ -62,12 +62,25 @@
                         <input type="password" name="txtpassword" maxlength="15" placeholder="password" class="entradas">
                         <br>
 
-                        <input type="text" name="txtnacionalidad" pattern="[0-9]*" maxlength="2" placeholder="Nacionalidad(solo numeros)" class="entradas">
+
+
+                        <label for="txtnacionalidad">Elige tu nacionaldad:</label>
                         <br>
-
-
-                        <input type="reset" value="cancel" class="button1">
-                        <input type="submit" value="update" class="button2">
+                        <select name="txtnacionalidad" id="txtnacionalidad">
+                          <option value="1">Brazil</option>
+                          <option value="2">Canada</option>
+                          <option value="3">China</option>
+                          <option value="4">India</option>
+                          <option value="5">Japon</option>
+                          <option value="6">Rusia</option>
+                          <option value="7">Korea</option>
+                          <option value="8">Reino unido</option>
+                          <option value="9">Estados unidos</option>
+                          <option value="10">Mexico</option>
+                        </select>
+<br>
+                        <input type="reset" value="cancelar" class="button1">
+                        <input type="submit" value="Registrarse" class="button2">
                       </form>
                       <?php
                       include_once("jugador.php");

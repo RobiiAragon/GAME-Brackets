@@ -22,8 +22,6 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/Brackets.php">Brackets</a></li>
-
                 <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
 
 

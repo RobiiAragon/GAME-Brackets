@@ -23,7 +23,7 @@
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
                 <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
             </ul>
         </div>
         <span class="navTrigger">
