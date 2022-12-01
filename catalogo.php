@@ -41,10 +41,12 @@
         <!-- just to make scrolling effect possible -->
         <h2 class="myH2">Catalogo</h2>
         <div class="catalogo">
+            <a href="./brackets.php">
         <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/smash.png">
         <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/overwatch.png">
         <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/lol.png">
         <img src="https://raw.githubusercontent.com/RobiiAragon/Proyecto-esperanza/main/static/img/games/256x/csgo.png">
+</a>
     </div>
 
 
