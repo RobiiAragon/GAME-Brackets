@@ -23,7 +23,7 @@
                 <li><a href="../admin/Admin Jugadores/jugadores.php">Admin Jugadores</a></li>
                 <li><a href="../admin/Admin evento/evento.php">Admin Eventos</a></li>
                 <li><a href="../admin/Admin Juegos/juegos.php">Admin Juegos</a></li>
-                <li><a href="../admin/Admin example/example.php">Admin Example</a></li>
+                <li><a href="../admin/Admin Clasificasion/Index.php">Admin Clasificasion</a></li>
                 <li><a href="../iniciarsesionadmin.php">Cerrar Sesion</a></li>
 
 

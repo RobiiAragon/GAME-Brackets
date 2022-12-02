@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>LVPO</title>
-    <!-- Conexiones -->
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
 
 <body>
-    <!-- NAVbar LOGO -->
+    <!-- partial:index.partial.html -->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -17,15 +16,17 @@
                     <img class="mr-2" src="./static/img/logo.png" />
             </div>
             </a>
-            <!-- NAVbar menu -->
+
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/brackets.php">Bracket</a></li>
-                <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/Brackets.php">Brackets</a></li>
+
+                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
+
+
             </ul>
         </div>
         <span class="navTrigger">
@@ -36,28 +37,42 @@
         </div>
     </nav>
     </div>
-    <!--END NAVbar menu -->
-    <!--Home (informacion y main page)-->
+
+
     <section class="home">
     </section>
     <div style="height: 1000px">
-
-        <h2 class="myH2">Liga de videojuegos profesional online</h2>
-
-        <p class="myP">UTT</p>
-
+        <!-- just to make scrolling effect possible -->
+        <h2 class="myH2">Inicio</h2>
         <p class="myP">El servicio de torneos de videojuegos es una página en donde los jugadores podrán inscribirse a torneos de tipo clasificación, en donde los participantes se puedan dar de alta, competir con otros jugadores y ganar premios, conforme avancen las rondas se hará el conteo de cuantas victorias y puntaje que tiene cada jugador, cuáles son sus estadísticas facilitando la previsualización de su desempeño como jugador. </p>
 
+
+        <?php
+ echo $_POST['first'];
+ echo $_POST['txtLastName'];
+ echo $_POST['txtAlias'];
+ echo $_POST['txtpassword'];
+ echo $_POST['txtnacionalidad'];
+
+
+ include_once("jugador.php");
+ $myJugador=new Jugadores();
+
+ $newid=$myJugador->setJugador($_POST['first'],$_POST['txtLastName'],$_POST['txtAlias'],password_hash($_POST['txtpassword'], PASSWORD_DEFAULT),$_POST['txtnacionalidad']);
+ echo $newid;
+
+
+?>
 
     </div>
 
 
 
-    <!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
+    <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="./partials/js/scripts.js"></script>
 
-    <!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
@@ -69,5 +84,5 @@
         });
     </script>
 
-    <!-- Pie de pagia -->
+
     <?php require "./partials/footer.php" ?>

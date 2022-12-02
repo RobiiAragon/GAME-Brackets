@@ -23,7 +23,7 @@
             <li><a href="./CREATE/JuegoCRUD.php">CREATE</a></li>
                 <li><a href="./READ/JuegoCRUD.php">READ</a></li>
                 <li><a href="./UPDATE/JuegoCRUD.php">UPDATE</a></li>
-                <li><a href="./DELETE/JuegoCRUD.php">DELATE</a></li>
+                <li><a href="./DELETE/JuegoCRUD.php">DELETE</a></li>
                 <li><a href="../../Home/homeadmin.php">Admin Principal</a></li>
 
 

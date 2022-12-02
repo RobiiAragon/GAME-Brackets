@@ -23,7 +23,7 @@
             <li><a href="./CREATE/eventoCRUD.php">CREATE</a></li>
                 <li><a href="./READ/eventoCRUD.php">READ</a></li>
                 <li><a href="./UPDATE/eventoCRUD.php">UPDATE</a></li>
-                <li><a href="./DELETE/eventoCRUD.php">DELATE</a></li>
+                <li><a href="./DELETE/eventoCRUD.php">DELETE</a></li>
                 <li><a href="../../Home/homeadmin.php">Admin Principal</a></li>
 
 

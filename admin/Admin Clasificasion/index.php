@@ -20,10 +20,10 @@
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-                <li><a href="./Insert/CRUDinsert.php">CREATE</a></li>
-                <li><a href="./READ/jugadorCRUD.php">READ</a></li>
+            <li><a href="./Insert/CRUDranking.php">CREATE</a></li>
+            <li><a href="./Insert/tablaEj4.php">READ</a></li>
                 <li><a href="./Update/CRUDupdate.php">UPDATE</a></li>
-                <li><a href="./Delete/CRUDdelete.php">DELETE</a></li>
+                <li><a href="./Delete/CRUDdel.php">DELETE</a></li>
                 <li><a href="../../Home/homeadmin.php">Admin Principal</a></li>
 
 
@@ -44,8 +44,8 @@
     </section>
     <div style="height: 1000px">
         <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Administrar Jugadores</h2>
-
+        <h2 class="myH2">Administrar Evento</h2>
+    
 
 
 
@@ -71,8 +71,8 @@
     </script>
 
 
-    <footer>
-        <div class="Copyright"> Copyright® 2022, Liga Profesional de Videojuegos Online Universidad Tecnologica de Tijuana, Docencia 1, 3roC, Equipo 7</div>
+<footer>
+      <div class="Copyright"> Copyright® 2022, Liga Profesional de Videojuegos Online Universidad Tecnologica de Tijuana, Docencia 1, 3roC, Equipo 7</div>
     </footer>
 
 </html>

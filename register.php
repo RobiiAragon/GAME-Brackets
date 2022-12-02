@@ -74,16 +74,16 @@
                     <label for="txtnacionalidad">Elige tu nacionaldad:</label>
                     <br>
                     <select name="txtnacionalidad" id="txtnacionalidad">
-                      <option value="1">Brazil</option>
-                      <option value="2">Canada</option>
-                      <option value="3">China</option>
-                      <option value="4">India</option>
-                      <option value="5">Japon</option>
-                      <option value="6">Rusia</option>
-                      <option value="7">Korea</option>
-                      <option value="8">Reino unido</option>
-                      <option value="9">Estados unidos</option>
-                      <option value="10">Mexico</option>
+                      <option value="1">1.Brazil</option>
+                      <option value="2">2.Canada</option>
+                      <option value="3">3.China</option>
+                      <option value="4">4.India</option>
+                      <option value="5">5.Japon</option>
+                      <option value="6">6.Rusia</option>
+                      <option value="7">7.Korea</option>
+                      <option value="8">8.Reino unido</option>
+                      <option value="9">9.Estados unidos</option>
+                      <option value="10">10.Mexico</option>
                     </select>
                     <br>
                     <button type="submit">Registrate</button>

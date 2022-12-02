@@ -100,6 +100,12 @@ body {
     background-position: center top;
 	background-size:cover;
 }
+.bracketHome{
+    text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 20px;
+}
 
 .navTrigger {
     display: none;

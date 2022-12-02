@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>LVPO</title>
-    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 
 <body>
@@ -12,17 +12,18 @@
     <nav class="nav">
         <div class="container">
             <div class="logo">
-                <a href="./index.php">
-                    <img class="mr-2" src="./static/img/logo.png" />
+                <a href="home.php">
+                    <img class="mr-2" src="../static/img/logo.png" />
             </div>
             </a>
 
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
-                <li><a href="../FINAL/catalogo.php">Juegos</a></li>
-                <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
+                <li><a href="../catalogo.php">Juegos</a></li>
+                <li><a href="../ranking.php">leaderboard</a></li>
+                <li><a href="../brackets.php">Bracket</a></li>
+                <li><a href="../logout.php">Cerrar Sesion</a></li>
 
 
             </ul>

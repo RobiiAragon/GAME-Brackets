@@ -24,19 +24,16 @@
               <div class="card-header">Actualizar un Juego</div>
               <div class="card-body">
                 <main>
-                  <section class="principal">
-                  </section>
                   <section class="secundario">
-                  <label for="idjuego">Inserta el ID del Juego a Editar:</label>
+                    <form action="upjuegos.php" method="POST" enctype="multipart/form-data">
+                      <label for="UPgenero">Inserta el ID del Juego a Editar:</label>
                       <br>
                       <input type="text" name="idjuego" maxlength="40" placeholder="ID del Juego" class="entradas">
                       <br>
-                    <form action="upjuegos.php" method="POST" enctype="multipart/form-data">
-                      <label for="UPnombrejuego">Nombre del Juego:</label>
+                      <label for="UPgenero">Nombre del Juego:</label>
                       <br>
                       <input type="text" name="UPnombrejuego" required pattern="[A-Za-z ]*" maxlength="40" placeholder="Nombre" class="entradas">
                       <br>
-
                       <label for="UPgenero">Genero del Juego:</label>
                       <br>
                       <select name="UPgenero" id="UPgenero">

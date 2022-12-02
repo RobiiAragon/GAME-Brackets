@@ -28,7 +28,7 @@
                     <section class="principal">
                     </section>
                     <section class="secundario">
-                      <form action="upJuegos.php" method="POST" enctype="multipart/form-data">
+                      <form action="addJuego.php" method="POST" enctype="multipart/form-data">
                         <label for="nombre_juego">Nombre del Juego:</label>
                         <br>
                         <input type="text" name="nombre_juego" required pattern="[A-Za-z ]*" maxlength="40" placeholder="Nombre" class="entradas">

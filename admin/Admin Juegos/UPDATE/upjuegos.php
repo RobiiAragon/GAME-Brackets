@@ -16,16 +16,12 @@
 
 
         <?php
- /*echo $_POST['first'];
- echo $_POST['txtLastName'];
- echo $_POST['inputEdad'];
- echo $_POST['inputEmail'];*/
  echo $_POST['idjuego'];
 
  include_once("Juego.php");
  $myjuego=new juegoUPD();
 
- $newid=$myjuego->updjuego($_POST['idjuego'], $_POST['UPnombrejuego'], $_POST['UPnombrejuego'],);
+ $newid=$myjuego->updjuego($_POST['idjuego'], $_POST['UPnombrejuego'], $_POST['UPgenero'],);
 //  echo $newid;
 
 header('Location:JuegoCRUD.php');
