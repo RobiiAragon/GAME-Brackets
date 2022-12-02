@@ -14,7 +14,7 @@ $resultado=mysqli_query($conexion,$consulta);
 $filas=mysqli_num_rows($resultado);
 
 if($filas){
-    header('Location:homeadmin.php');
+    header('Location:./Home/homeadmin.php');
 
 }else{
    echo '<div class="alert alert-danger"> LOS CAMPOS ESTAN INCORRECTOS</div>';

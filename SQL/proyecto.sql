@@ -164,6 +164,16 @@ primary key(emparejamiento,clasificacion)
 
 /* triggers  */
 
+/*
+
+ Trigger 1. No se puede eliminar el juego de la tabla juegos
+
+ La funcion de este trigger es que no se pueda eliminar
+ el juego ya que esta es importante para la
+ tabla `jugadores` y la funionalidad principal
+ de la pagina.
+
+*/
 
 delimiter$$
  create trigger  notdelete
@@ -179,7 +189,15 @@ delimiter;
 DELETE  FROM juegos where codigo = 1
 
 
+/*
 
+ Trigger 2. No se puede eliminar la `nacionalidad`
+
+ La funcion de este trigger es que no se pueda eliminar
+ la `nacionalidad` ya que esta es importante para la
+ tabla `jugadores`.
+
+*/
 
 delimiter$$
  create trigger  notdeletenationality
@@ -268,4 +286,63 @@ values ('Luka','Perkovic','Perkz',2,'kullolok'),
 
 alter table emparejamiento add COLUMN Alias varchar(20) not null;
 
+/*vistas*/
+create view jugadores_mexicanos as
+select * from jugadores
+WHERE jugadores.nacionalidad = 10;
 
+select * from jugadores_mexicanos;
+
+create view jugadores_estadounidenses as
+select * from jugadores
+WHERE jugadores.nacionalidad = 9;
+
+select * from jugadores_estadounidenses;
+
+create view jugadores_britanicos as
+select * from jugadores
+WHERE jugadores.nacionalidad = 8;
+
+select * from jugadores_britanicos;
+
+create view jugadores_coreanos as
+select * from jugadores
+WHERE jugadores.nacionalidad = 7;
+
+select * from jugadores_coreanos;
+
+create view jugadores_rusos as
+select * from jugadores
+WHERE jugadores.nacionalidad = 6;
+
+select * from jugadores_rusos;
+
+create view jugadores_japonese as
+select * from jugadores
+WHERE jugadores.nacionalidad = 5;
+
+select * from jugadores_japonese;
+
+create view jugadores_india as
+select * from jugadores
+WHERE jugadores.nacionalidad = 4;
+
+select * from jugadores_india;
+
+create view jugadores_china as
+select * from jugadores
+WHERE jugadores.nacionalidad = 3;
+
+select * from jugadores_china;
+
+create view jugadores_canadiences as
+select * from jugadores
+WHERE jugadores.nacionalidad = 2;
+
+select * from jugadores_canadiences;
+
+create view jugadores_brasilenos as
+select * from jugadores
+WHERE jugadores.nacionalidad = 1;
+
+select * from jugadores_brasilenos;

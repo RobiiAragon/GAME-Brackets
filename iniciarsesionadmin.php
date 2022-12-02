@@ -6,8 +6,7 @@
     <title>LVPO</title>
     <!-- Conexiones -->
     <link rel="stylesheet" href="./static/css/style.css">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="./static/css/bootsrap.css" />
+    <link rel="stylesheet" href="./static/css/login.css">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
                 <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
             </ul>
         </div>
         <span class="navTrigger">
@@ -43,20 +42,25 @@
     </section>
     <div style="height: 1000px">
 
-        <h2 class="myH2">Iniciar sesion</h2>
+    <div style="height: 1000px">
+        <h2 class="myH2">Admin</h2>
         <section class="secundario">
              <form action="validar.php" method="POST" enctype="multipart/form-data">      
-               <input type="text" name="Alias" maxlength="40" required placeholder="Nickname" class="entradas">
+               <input type="text" name="Alias" maxlength="40" required placeholder="Nickname" class="container">
                         
-               <input type="password" name="password" minlength="5" maxlength="50" placeholder="password" class="entradas">
+               <input type="password" name="password" minlength="5" maxlength="50" placeholder="password" class="container">
 
+               <button type="submit">Login</button>
+               <input type="reset" value="cancel" class="cancelbtn">
 
-               <input type="reset" value="cancel" class="button1">
-               <input type="submit" value="Iniciar sesion" class="button2">
              </form>
           </section>
     </main>
     <br>
+
+    </div>
+
+
 
     <!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -74,5 +78,64 @@
         });
     </script>
 
-    <!-- Pie de pagia -->
-    <?php require "./partials/footer.php" ?>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <div class="Copyright"> Copyright® 2022, Liga Profesional de Videojuegos Online Universidad Tecnologica de Tijuana, Docencia 1, 3roC, Equipo 7</div>
+</footer>
+
+</html>

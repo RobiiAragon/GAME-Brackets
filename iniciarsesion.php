@@ -6,8 +6,7 @@
     <title>LVPO</title>
     <!-- Conexiones -->
     <link rel="stylesheet" href="./static/css/style.css">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="./static/css/bootsrap.css" />
+    <link rel="stylesheet" href="./static/css/login.css">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
                 <li><a href="../FINAL/register.php">Registrate</a></li>
-                <li><a href="../FINAL/login.php">Iniciar Sesion</a></li>
+                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
             </ul>
         </div>
         <span class="navTrigger">
@@ -45,34 +44,98 @@
 
         <h2 class="myH2">Iniciar sesion</h2>
         <section class="secundario">
-             <form action="validar.php" method="POST" enctype="multipart/form-data">      
-               <input type="text" name="Alias" maxlength="40" required placeholder="Nickname" class="entradas">
-                        
-               <input type="password" name="password" minlength="5" maxlength="50" placeholder="password" class="entradas">
+            <form action="validar.php" method="POST" enctype="multipart/form-data">
+                <input type="text" name="Alias" maxlength="40" required placeholder="Nickname" class="entradas">
+
+                <input type="password" name="password" minlength="5" maxlength="50" placeholder="password" class="entradas">
 
 
-               <input type="reset" value="cancel" class="button1">
-               <input type="submit" value="Iniciar sesion" class="button2">
-             </form>
-          </section>
-    </main>
-    <br>
+                <button type="submit">Login</button>
+                <input type="reset" value="cancel" class="cancelbtn">
+            </form>
+        </section>
+        </main>
+        <br>
 
-    <!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="./partials/js/scripts.js"></script>
+</body>
 
-    <!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
-    <script>
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-    </script>
 
-    <!-- Pie de pagia -->
-    <?php require "./partials/footer.php" ?>
+
+<!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./partials/js/scripts.js"></script>
+
+<!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<footer>
+    <a href="./iniciarsesionadmin.php">
+        <h4>Eres Administrador?</h4>
+    </a>
+    <div class="Copyright"> Copyright® 2022, Liga Profesional de Videojuegos Online Universidad Tecnologica de Tijuana, Docencia 1, 3roC, Equipo 7</div>
+</footer>
+
+</html>

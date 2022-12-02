@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,7 @@
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
+    <!-- Tabla emparejamiento -->
     <nav class="nav">
         <div class="container">
             <div class="logo">
@@ -23,7 +22,8 @@
             <ul class="navlinks">
                 <li><a href="../FINAL/catalogo.php">Juegos</a></li>
                 <li><a href="../FINAL/ranking.php">leaderboard</a></li>
-                <li><a href="../FINAL/logout.php">Cerrar Sesion</a></li>
+                <li><a href="../FINAL/register.php">Registrate</a></li>
+                <li><a href="../FINAL/iniciarsesion.php">Iniciar Sesion</a></li>
 
 
             </ul>
@@ -37,56 +37,64 @@
     </nav>
     </div>
 
-
-    <section class="home">
-    </section>
-    <div style="height: 1000px">
-        <!-- just to make scrolling effect possible -->
-        <h2 class="myH2">Tabla de clasificaciones</h2>
-        <p class="myP">Top 10 mundial Smash Bros</p>
-        <p class="myP">UTT</p>
-        <main> 
-        <section class="secundario form">
-             <?php
-              include_once("class.php");
-              $myActor=new Emparejamiento();
-              $dataset=$myActor->getAllPlayer();
-              
-              if($dataset=="vacio"){
-                echo "no hay datos";
-              }else{
-
-                //tabla
-                echo '<table border="1">';
-                 while ($fila=mysqli_fetch_assoc($dataset)) {
-                   echo "<tr>";
-                   // print_r($film);
-                   foreach($fila as $posicion =>$valor ){
-                    //  echo '<br>';
-                     echo '<td>';
-                      echo $valor;
-                     echo '</td>';
-                   
-                   }
-                  echo "</tr>";
-                }
-                echo '</table>';
-
-                
-              }
-
-             ?>  
+    <center>
+        <section class="home">
         </section>
-    </main>
-    <br>
-  </body>
-    </div>
+        <div style="height: 1000px">
+            <!-- just to make scrolling effect possible -->
+            <h2 class="myH2">Tabla de clasificaciones</h2>
+            <h1 class="myH3">Top 10 Mejores Jugadores Mundial</h1>
+            <main>
+                <section class="secundario form">
+                    <style>
+                        table {
+                            border-collapse: collapse;
+                            width: 50%;
+                        }
+
+                        th,
+                        td {
+                            padding: 10px;
+                            text-align: left;
+                            border-bottom: 1px solid #ddd;
+                        }
+                    </style>
+                    </style>
+                    <?php
+                    include_once("class.php");
+                    $myActor = new Emparejamiento();
+                    $dataset = $myActor->getAllPlayer();
+
+                    if ($dataset == "vacio") {
+                        echo "no hay datos";
+                    } else {
+
+                        //tabla
+                        echo '<table border="5">';
+                        while ($fila = mysqli_fetch_assoc($dataset)) {
+                            echo "<tr>";
+                            // print_r($film);
+                            foreach ($fila as $posicion => $valor) {
+                                //  echo '<br>';
+                                echo '<td>';
+                                echo $valor;
+                                echo '</td>';
+                            }
+                            echo "</tr>";
+                        }
+                        echo '</table>';
+                    }
+
+                    ?>
+                    <br>
+</body>
+</div>
+</center>
 
 
 
-  
 
-  </div>
+</div>
 
 
 

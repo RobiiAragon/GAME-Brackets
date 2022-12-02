@@ -4,7 +4,28 @@
 	<link rel="stylesheet" href="/partials/header.css">
 
 </head>
+</div>
 
+
+
+<!--Conexion con animaciones y funcionalidad del carrusel y del navbar-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="./partials/js/scripts.js"></script>
+
+<!-- Función utilizada para reducir la barra de navegación, eliminar el relleno y agregar un fondo negro -->
+<script>
+	$(window).scroll(function() {
+		if ($(document).scrollTop() > 50) {
+			$('.nav').addClass('affix');
+			console.log("OK");
+		} else {
+			$('.nav').removeClass('affix');
+		}
+	});
+</script>
+
+<!-- Pie de pagia -->
+<?php require "./partials/footer.php" ?>
 <body>
 	<div class="slider">
 		<div class="slide-track">

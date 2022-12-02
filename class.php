@@ -10,7 +10,7 @@ class Emparejamiento extends conexionDB{
       public function getAllPlayer(){
         $result = $this->conectar();
         if($result){
-           $dataset=$this->consultar("select * from emparejamiento;");
+           $dataset=$this->consultar("SELECT posiciones, puntaje, Alias FROM emparejamiento;");
         }else{
             echo "no hay datos ";
             $dataset="vacio";
